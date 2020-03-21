@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Corona</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+       .new {
+       	background: red;
+       	color: white !important;
+       }
+       .btn {
+       	display: inline-block;
+       	padding: 1em 1.5em;
+       	font-size: .9em;
+       	text-decoration: none;
+       }
+    </style>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

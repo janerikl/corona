@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  symptom_id: 1
+  started: 2020-03-21 18:43:50
+  city_id: 1
+
+two:
+  symptom_id: 1
+  started: 2020-03-21 18:43:50
+  city_id: 1
