@@ -2,36 +2,13 @@
 
 <h1>Korona oireet kartta</h1>
 
+<div id="reports">
+  ilmoitettuja oireita <%= @reports.all.size %>
+</div>
 
 <div id="map"></div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Symptom</th>
-      <th>Started</th>
-      <th>City</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @reports.each do |report| %>
-      <tr>
-        <td><%= report.symptom_id %></td>
-        <td><%= report.started %></td>
-        <td><%= report.city_id %></td>
-        <td><%= link_to 'Show', report %></td>
-        <td><%= link_to 'Edit', edit_report_path(report) %></td>
-        <td><%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
 <br>
-
-<%= link_to 'Ilmoita oireista', new_report_path, class: "new btn" %>
 
 <script>
   labels = ['A','B']
